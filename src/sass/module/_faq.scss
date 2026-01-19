@@ -1,0 +1,48 @@
+@use "global" as *;
+
+// よくある質問
+.faq {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: #f9f9f9;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.faq__inner {
+  @include mq(md) {
+  }
+}
+
+.faq__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  text-align: center;
+  color: $color-main;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(36);
+    margin-bottom: rem(60);
+  }
+}
+
+.faq__items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  max-width: rem(800);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    gap: rem(32);
+  }
+}
+
+.faq__item {
+  @include mq(md) {
+  }
+}

@@ -1,0 +1,50 @@
+@use "global" as *;
+
+// レッスンステップ
+.lesson-step {
+  @include mq(md) {
+  }
+}
+
+.lesson-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(48);
+  height: rem(48);
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $color-main;
+  background-color: $white;
+  border: rem(3) solid $color-main;
+  border-radius: 50%;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    width: rem(56);
+    height: rem(56);
+    font-size: rem(28);
+    border-width: rem(4);
+    margin-bottom: rem(20);
+  }
+}
+
+.lesson-step__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $color-main;
+  margin-bottom: rem(8);
+  @include mq(md) {
+    font-size: rem(24);
+    margin-bottom: rem(12);
+  }
+}
+
+.lesson-step__text {
+  font-size: rem(14);
+  line-height: 1.8;
+  color: $black;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.8;
+  }
+}

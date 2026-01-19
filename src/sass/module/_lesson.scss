@@ -1,0 +1,74 @@
+@use "global" as *;
+
+// レッスン内容
+.lesson {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: #f9f9f9;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.lesson__inner {
+  @include mq(md) {
+  }
+}
+
+.lesson__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  text-align: center;
+  color: $color-main;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(36);
+    margin-bottom: rem(60);
+  }
+}
+
+.lesson__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: rem(20);
+  }
+}
+
+.lesson__step {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.lesson__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-32);
+  width: rem(40);
+  height: rem(20);
+  background-color: $color-main;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%, 12px 50%);
+  @include mq(md) {
+    left: auto;
+    right: rem(-30);
+    top: rem(24);
+    bottom: auto;
+    transform: none;
+    width: rem(50);
+    height: rem(16);
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%, 12px 50%);
+  }
+}

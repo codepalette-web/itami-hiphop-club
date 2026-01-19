@@ -1,0 +1,68 @@
+@use "global" as *;
+
+// 特徴カード
+.feature-card {
+  padding: rem(24);
+  background-color: $white;
+  border-radius: rem(12);
+  box-shadow: 0 rem(4) rem(12) rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  @include mq(md) {
+    padding: rem(32);
+    border-radius: rem(16);
+    box-shadow: 0 rem(6) rem(20) rgba(0, 0, 0, 0.12);
+  }
+}
+
+.feature-card:hover {
+  transform: translateY(rem(-4));
+  box-shadow: 0 rem(8) rem(24) rgba(0, 0, 0, 0.15);
+  @include mq(md) {
+    transform: translateY(rem(-6));
+    box-shadow: 0 rem(12) rem(32) rgba(0, 0, 0, 0.18);
+  }
+}
+
+.feature-card__icon {
+  margin-bottom: rem(20);
+  @include mq(md) {
+    margin-bottom: rem(24);
+  }
+}
+
+.feature-card__image {
+  width: 100%;
+  height: auto;
+  max-height: rem(200);
+  object-fit: cover;
+  border-radius: rem(8);
+  box-shadow: 0 rem(4) rem(8) rgba(0, 0, 0, 0.1);
+  @include mq(md) {
+    max-height: rem(240);
+    border-radius: rem(12);
+    box-shadow: 0 rem(6) rem(12) rgba(0, 0, 0, 0.12);
+  }
+}
+
+.feature-card__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $color-main;
+  margin-bottom: rem(12);
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(24);
+    margin-bottom: rem(16);
+  }
+}
+
+.feature-card__text {
+  font-size: rem(14);
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.8;
+  }
+}

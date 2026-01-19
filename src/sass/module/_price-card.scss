@@ -1,0 +1,53 @@
+@use "global" as *;
+
+// 料金カード
+.price-card {
+  max-width: rem(400);
+  width: 100%;
+  padding: rem(40) rem(32);
+  background-color: $white;
+  border: 2px solid $color-main;
+  border-radius: rem(12);
+  text-align: center;
+  @include mq(md) {
+    padding: rem(60) rem(48);
+    border-radius: rem(16);
+  }
+}
+
+.price-card__amount {
+  font-size: rem(32);
+  font-weight: $bold;
+  color: $color-accent;
+  margin-bottom: rem(24);
+  @include mq(md) {
+    font-size: rem(40);
+    margin-bottom: rem(32);
+  }
+}
+
+.price-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include mq(md) {
+  }
+}
+
+.price-card__item {
+  font-size: rem(14);
+  line-height: 1.8;
+  color: $black;
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  border-bottom: 1px solid #e0e0e0;
+  @include mq(md) {
+    font-size: rem(16);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+  }
+}
+
+.price-card__item:last-child {
+  border-bottom: none;
+}

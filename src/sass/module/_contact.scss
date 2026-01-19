@@ -1,0 +1,108 @@
+@use "global" as *;
+
+// お問い合わせ
+.contact {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: $color-main;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.contact__inner {
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.contact__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  color: $white;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    font-size: rem(36);
+    margin-bottom: rem(20);
+  }
+}
+
+.contact__text {
+  font-size: rem(16);
+  line-height: 1.8;
+  color: $white;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1.8;
+    margin-bottom: rem(48);
+  }
+}
+
+.contact__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  max-width: rem(400);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(24);
+    max-width: rem(600);
+    margin-bottom: rem(48);
+  }
+}
+
+.contact__button {
+  display: inline-block;
+  padding: rem(16) rem(32);
+  font-size: rem(16);
+  font-weight: $bold;
+  color: $black;
+  background-color: $white;
+  border-radius: rem(30);
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.3s;
+  @include mq(md) {
+    flex: 1;
+    padding: rem(18) rem(40);
+    font-size: rem(18);
+    border-radius: rem(35);
+  }
+}
+
+.contact__button:hover {
+  opacity: 0.9;
+}
+
+.contact__button--line {
+  background-color: #06c755;
+  color: $white;
+  @include mq(md) {
+  }
+}
+
+.contact__button--mail {
+  @include mq(md) {
+  }
+}
+
+.contact__form {
+  @include mq(md) {
+  }
+}
+
+.contact__form-note {
+  font-size: rem(12);
+  color: $white;
+  opacity: 0.8;
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}

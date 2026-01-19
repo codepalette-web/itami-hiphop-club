@@ -1,0 +1,77 @@
+@use "global" as *;
+
+// FAQアイテム
+.faq-item {
+  padding: rem(24) rem(20);
+  background-color: $white;
+  border-radius: rem(8);
+  @include mq(md) {
+    padding: rem(32) rem(28);
+    border-radius: rem(12);
+  }
+}
+
+.faq-item__question {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(12);
+  margin-bottom: rem(16);
+  @include mq(md) {
+    gap: rem(16);
+    margin-bottom: rem(20);
+  }
+}
+
+.faq-item__q {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: $bold;
+  color: $color-main;
+  flex-shrink: 0;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.faq-item__question-text {
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1.6;
+  color: $black;
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1.6;
+  }
+}
+
+.faq-item__answer {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(12);
+  padding-left: rem(28);
+  @include mq(md) {
+    gap: rem(16);
+    padding-left: rem(36);
+  }
+}
+
+.faq-item__a {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: $bold;
+  color: $color-accent;
+  flex-shrink: 0;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.faq-item__answer-text {
+  font-size: rem(14);
+  line-height: 1.8;
+  color: $black;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.8;
+  }
+}

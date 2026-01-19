@@ -1,0 +1,46 @@
+@use "global" as *;
+
+// 教室の特徴
+.feature {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: #fafafa;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.feature__inner {
+  @include mq(md) {
+  }
+}
+
+.feature__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  text-align: center;
+  color: $color-main;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(36);
+    margin-bottom: rem(60);
+  }
+}
+
+.feature__cards {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(40);
+  }
+}
+
+.feature__card {
+  @include mq(md) {
+  }
+}

@@ -1,0 +1,97 @@
+@use "global" as *;
+
+// 講師紹介
+.instructor {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: #fefefe;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.instructor__inner {
+  @include mq(md) {
+  }
+}
+
+.instructor__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  text-align: center;
+  color: $color-main;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(36);
+    margin-bottom: rem(60);
+  }
+}
+
+.instructor__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+  @include mq(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: rem(60);
+  }
+}
+
+.instructor__image-wrapper {
+  flex-shrink: 0;
+  @include mq(md) {
+    width: 40%;
+  }
+}
+
+.instructor__image {
+  width: 100%;
+  height: auto;
+  border-radius: rem(8);
+  object-fit: cover;
+  @include mq(md) {
+    border-radius: rem(12);
+  }
+}
+
+.instructor__text-wrapper {
+  @include mq(md) {
+    flex: 1;
+  }
+}
+
+.instructor__name {
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $color-main;
+  margin-bottom: rem(20);
+  @include mq(md) {
+    font-size: rem(28);
+    margin-bottom: rem(24);
+  }
+}
+
+.instructor__text {
+  font-size: rem(14);
+  line-height: 1.8;
+  color: $black;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.8;
+    margin-bottom: rem(20);
+  }
+}
+
+.instructor__text--emphasis {
+  font-weight: $bold;
+  color: $color-accent;
+  margin-bottom: 0;
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}

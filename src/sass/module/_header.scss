@@ -1,0 +1,52 @@
+@use "global" as *;
+
+// ヘッダー
+.header {
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  background-color: $white;
+  border-bottom: 1px solid #e0e0e0;
+  @include mq(md) {
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+  }
+}
+
+.header__inner {
+  @include mq(md) {
+  }
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include mq(md) {
+    flex-direction: row;
+    align-items: baseline;
+    gap: rem(12);
+    text-align: left;
+  }
+}
+
+.header__logo-main {
+  font-size: rem(28);
+  font-weight: $bold;
+  color: $color-main;
+  font-family: $second-font-family;
+  letter-spacing: rem(2);
+  @include mq(md) {
+    font-size: rem(32);
+    letter-spacing: rem(3);
+  }
+}
+
+.header__logo-sub {
+  font-size: rem(12);
+  font-weight: $normal;
+  color: $black;
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}

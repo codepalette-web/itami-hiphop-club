@@ -1,0 +1,82 @@
+@use "global" as *;
+
+// スケジュール
+.schedule {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  background-color: #f9f9f9;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.schedule__inner {
+  @include mq(md) {
+  }
+}
+
+.schedule__title {
+  font-size: rem(28);
+  font-weight: $bold;
+  text-align: center;
+  color: $color-main;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(36);
+    margin-bottom: rem(60);
+  }
+}
+
+.schedule__content {
+  max-width: rem(500);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.schedule__day {
+  margin-bottom: rem(24);
+  @include mq(md) {
+    margin-bottom: rem(32);
+  }
+}
+
+.schedule__day-text {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $black;
+  margin-bottom: rem(8);
+  @include mq(md) {
+    font-size: rem(24);
+    margin-bottom: rem(12);
+  }
+}
+
+.schedule__time {
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $color-accent;
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.schedule__note {
+  font-size: rem(14);
+  line-height: 1.8;
+  color: $black;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.schedule__note-br {
+  @include mq(md) {
+    display: none;
+  }
+}
