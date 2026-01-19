@@ -31,6 +31,7 @@
 }
 
 .faq__items {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: rem(24);

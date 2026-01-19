@@ -24,11 +24,9 @@
   display: flex;
   align-items: flex-start;
   gap: rem(12);
-  padding-left: rem(28);
   margin-top: rem(16);
   @include mq(md) {
     gap: rem(16);
-    padding-left: rem(36);
     margin-top: rem(20);
   }
 }
@@ -52,17 +50,6 @@
   @include mq(md) {
     font-size: rem(18);
     line-height: 1.6;
-  }
-}
-
-.faq-item__answer {
-  display: flex;
-  align-items: flex-start;
-  gap: rem(12);
-  padding-left: rem(28);
-  @include mq(md) {
-    gap: rem(16);
-    padding-left: rem(36);
   }
 }
 

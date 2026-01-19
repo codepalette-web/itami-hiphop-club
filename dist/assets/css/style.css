@@ -257,18 +257,34 @@ legend {
 	text-align: center;
 }
 
+.access__address {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.access__address-title {
+	background-color: #e8f0f5;
+	border-radius: 1.25rem;
+	color: #111;
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	padding: 0.5rem 1.5rem;
+}
+
 .access__text {
-	color: orange;
+	color: #111;
 	font-size: 1.125rem;
 	font-weight: 700;
-	margin-top: 0.5rem;
+	margin-top: 1.25rem;
 	text-align: center;
 }
 
 .access__note {
-	color: #111;
-	font-size: 0.875rem;
-	margin-top: 2rem;
+	color: #666;
+	font-size: 0.8125rem;
+	line-height: 1.8;
+	margin-top: 1rem;
 	text-align: center;
 }
 
@@ -370,7 +386,6 @@ legend {
 	display: flex;
 	gap: 0.75rem;
 	margin-top: 1rem;
-	padding-left: 1.75rem;
 }
 
 .faq-item__q {
@@ -386,13 +401,6 @@ legend {
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1.6;
-}
-
-.faq-item__answer {
-	align-items: flex-start;
-	display: flex;
-	gap: 0.75rem;
-	padding-left: 1.75rem;
 }
 
 .faq-item__a {
@@ -428,6 +436,7 @@ legend {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	list-style: none;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 50rem;
@@ -1132,14 +1141,24 @@ html {
 	margin-top: 2rem;
 }
 
+.access__address {
+	margin-top: 3.125rem;
+}
+
+.access__address-title {
+	border-radius: 1.5rem;
+	font-size: 1rem;
+	padding: 0.625rem 2rem;
+}
+
 .access__text {
 	font-size: 1.25rem;
-	margin-top: 0.75rem;
+	margin-top: 1.5rem;
 }
 
 .access__note {
-	font-size: 1rem;
-	margin-top: 2.5rem;
+	font-size: 0.875rem;
+	margin-top: 1.25rem;
 }
 
 .access__map {
@@ -1199,7 +1218,6 @@ html {
 .faq-item__answer {
 	gap: 1rem;
 	margin-top: 1.25rem;
-	padding-left: 2.25rem;
 }
 
 .faq-item__q {
@@ -1209,11 +1227,6 @@ html {
 .faq-item__question-text {
 	font-size: 1.125rem;
 	line-height: 1.6;
-}
-
-.faq-item__answer {
-	gap: 1rem;
-	padding-left: 2.25rem;
 }
 
 .faq-item__a {
