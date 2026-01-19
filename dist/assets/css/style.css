@@ -696,11 +696,22 @@ legend {
 	padding-top: 3.75rem;
 }
 
+.gallery__header {
+	text-align: center;
+}
+
+.gallery__label {
+	color: orange;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
 .gallery__title {
 	color: green;
 	font-size: 1.75rem;
 	font-weight: 700;
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 	text-align: center;
 }
 
@@ -776,11 +787,22 @@ legend {
 	padding-top: 3.75rem;
 }
 
+.instructor__header {
+	text-align: center;
+}
+
+.instructor__label {
+	color: orange;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
 .instructor__title {
 	color: green;
 	font-size: 1.75rem;
 	font-weight: 700;
-	margin-top: 2.5rem;
+	margin-top: 0.5rem;
 	text-align: center;
 }
 
@@ -952,64 +974,137 @@ legend {
 }
 
 .price {
-	background-color: #fafafa;
+	background-color: #fefcf8;
 	margin-top: 5rem;
 	padding-bottom: 3.75rem;
 	padding-top: 3.75rem;
+}
+
+.price__header {
+	text-align: center;
+}
+
+.price__label {
+	color: orange;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 .price__title {
 	color: green;
 	font-size: 1.75rem;
 	font-weight: 700;
-	margin-top: 2.5rem;
+	margin-top: 0.5rem;
 	text-align: center;
 }
 
-.schedule {
-	background-color: #f9f9f9;
-	margin-top: 5rem;
-	padding-bottom: 3.75rem;
-	padding-top: 3.75rem;
+.price__table-wrapper {
+	margin-top: 2.5rem;
+	overflow-x: auto;
 }
 
-.schedule__title {
-	color: green;
-	font-size: 1.75rem;
+.price__table {
+	background-color: #fff;
+	border-collapse: collapse;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 100%;
+}
+
+.price__table-header {
+	background-color: #e8f0f5;
+	border-bottom: 1px solid #d0d0d0;
+	color: #111;
+	font-size: 0.875rem;
 	font-weight: 700;
+	padding: 1rem 0.75rem;
+	text-align: center;
+}
+
+.price__table-data {
+	border-bottom: 1px solid #e0e0e0;
+	color: #111;
+	font-size: 0.875rem;
+	padding: 1rem 0.75rem;
+	text-align: center;
+}
+
+.price__table tbody tr:last-child .price__table-data {
+	border-bottom: none;
+}
+
+.price__details {
+	background-color: #fff;
+	border-radius: 0.75rem;
+	box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 	margin-top: 2.5rem;
-	text-align: center;
+	padding: 1.5rem;
 }
 
-.schedule__content {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 31.25rem;
-	text-align: center;
+.price__details-title {
+	color: green;
+	font-size: 1.25rem;
+	font-weight: 700;
+	padding-left: 1rem;
+	position: relative;
 }
 
-.schedule__day {
+.price__details-title::before {
+	background-color: #111;
+	content: "";
+	height: 0.5rem;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0.5rem;
+}
+
+.price__details-list {
 	margin-top: 1.5rem;
 }
 
-.schedule__day-text {
-	color: #111;
-	font-size: 1.25rem;
-	font-weight: 700;
+.price__details-item {
+	border-bottom: 1px solid #f0f0f0;
+	display: flex;
+	gap: 1rem;
+	padding: 0.75rem 0;
 }
 
-.schedule__time {
-	color: orange;
-	font-size: 1.5rem;
+.price__details-item:last-child {
+	border-bottom: none;
+}
+
+.price__details-term {
+	color: #111;
+	flex-shrink: 0;
+	font-size: 0.875rem;
 	font-weight: 700;
+	width: 3.75rem;
+}
+
+.price__details-desc {
+	color: #111;
+	flex: 1;
+	font-size: 0.875rem;
+}
+
+.price__notes {
+	list-style: none;
+	margin-top: 1.5rem;
+}
+
+.price__note {
+	color: #666;
+	font-size: 0.8125rem;
+	line-height: 1.8;
 	margin-top: 0.5rem;
 }
 
-.schedule__note {
-	color: #111;
-	font-size: 0.875rem;
-	line-height: 1.8;
-	margin-top: 1.5rem;
+.price__note:first-child {
+	margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1322,9 +1417,13 @@ html {
 	padding-top: 5rem;
 }
 
+.gallery__label {
+	font-size: 1.125rem;
+}
+
 .gallery__title {
 	font-size: 2.25rem;
-	margin-top: 1.25rem;
+	margin-top: 0.75rem;
 }
 
 .gallery__text {
@@ -1369,9 +1468,13 @@ html {
 	padding-top: 5rem;
 }
 
+.instructor__label {
+	font-size: 1.125rem;
+}
+
 .instructor__title {
 	font-size: 2.25rem;
-	margin-top: 3.75rem;
+	margin-top: 0.75rem;
 }
 
 .instructor__content {
@@ -1467,42 +1570,68 @@ html {
 	padding-top: 5rem;
 }
 
+.price__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50rem;
+}
+
+.price__label {
+	font-size: 1.125rem;
+}
+
 .price__title {
 	font-size: 2.25rem;
-	margin-top: 3.75rem;
-}
-
-.schedule {
-	margin-top: 7.5rem;
-	padding-bottom: 5rem;
-	padding-top: 5rem;
-}
-
-.schedule__title {
-	font-size: 2.25rem;
-	margin-top: 3.75rem;
-}
-
-.schedule__day {
-	margin-top: 2rem;
-}
-
-.schedule__day-text {
-	font-size: 1.5rem;
-}
-
-.schedule__time {
-	font-size: 2rem;
 	margin-top: 0.75rem;
 }
 
-.schedule__note {
-	font-size: 1rem;
-	margin-top: 2rem;
+.price__table-wrapper {
+	margin-top: 3.125rem;
 }
 
-.schedule__note-br {
-	display: none;
+.price__table-header {
+	font-size: 1rem;
+	padding: 1.25rem 1rem;
+}
+
+.price__table-data {
+	font-size: 1rem;
+	padding: 1.25rem 1rem;
+}
+
+.price__details {
+	margin-top: 3.125rem;
+	padding: 2rem;
+}
+
+.price__details-title {
+	font-size: 1.5rem;
+}
+
+.price__details-list {
+	margin-top: 1.75rem;
+}
+
+.price__details-item {
+	gap: 1.5rem;
+	padding: 1rem 0;
+}
+
+.price__details-term {
+	font-size: 1rem;
+	width: 5rem;
+}
+
+.price__details-desc {
+	font-size: 1rem;
+}
+
+.price__notes {
+	margin-top: 1.75rem;
+}
+
+.price__note {
+	font-size: 0.875rem;
 }
 
 }

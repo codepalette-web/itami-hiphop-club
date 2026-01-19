@@ -175,7 +175,10 @@
     <!-- 講師紹介 -->
     <section class="instructor">
       <div class="instructor__inner inner">
-        <h2 class="instructor__title">講師紹介</h2>
+        <div class="instructor__header">
+          <p class="instructor__label">Instructor</p>
+          <h2 class="instructor__title">講師紹介</h2>
+        </div>
         <div class="instructor__content">
           <div class="instructor__image">
             <img src="./assets/images/common/stage-01.jpg" alt="KT（ケイティー先生）" width="400" height="500">
@@ -201,7 +204,10 @@
     <!-- 写真＆イラストギャラリー -->
     <section class="gallery">
       <div class="gallery__inner inner">
-        <h2 class="gallery__title">レッスンの様子</h2>
+        <div class="gallery__header">
+          <p class="gallery__label">Gallery</p>
+          <h2 class="gallery__title">レッスンの様子</h2>
+        </div>
         <p class="gallery__text">メンバーやレッスン風景です。みんなで和気藹々と楽しんでいます。</p>
         <ul class="gallery__items">
           <li class="gallery__image">
@@ -229,28 +235,55 @@
     <!-- 料金 -->
     <section class="price">
       <div class="price__inner inner">
-        <h2 class="price__title">料金案内</h2>
-        <div class="price__card price-card">
-          <p class="price-card__amount">1回　1,500円</p>
-          <ul class="price-card__list">
-            <li class="price-card__item">月謝なし</li>
-            <li class="price-card__item">単発参加OK</li>
-            <li class="price-card__item">入会金なし</li>
-          </ul>
+        <div class="price__header">
+          <p class="price__label">Course</p>
+          <h2 class="price__title">コースのご案内</h2>
         </div>
-      </div>
-    </section>
 
-    <!-- スケジュール -->
-    <section class="schedule">
-      <div class="schedule__inner inner">
-        <h2 class="schedule__title">レッスン日時</h2>
-        <div class="schedule__content">
-          <div class="schedule__day">
-            <p class="schedule__day-text">月曜日</p>
-            <p class="schedule__time">11:00 ～ 12:00</p>
-          </div>
-          <p class="schedule__note">※人数次第で<br class="schedule__note-br">土曜クラス開講予定</p>
+        <div class="price__table-wrapper">
+          <table class="price__table">
+            <thead>
+              <tr>
+                <th class="price__table-header">コース</th>
+                <th class="price__table-header">料金(税込)</th>
+                <th class="price__table-header">備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="price__table-data">単発コース</td>
+                <td class="price__table-data">¥1,500 / 回</td>
+                <td class="price__table-data">週1回・60分</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="price__details">
+          <h3 class="price__details-title">大人ヒップホップクラス</h3>
+          <dl class="price__details-list">
+            <div class="price__details-item">
+              <dt class="price__details-term">料金</dt>
+              <dd class="price__details-desc">1回1,500円(税込)</dd>
+            </div>
+            <div class="price__details-item">
+              <dt class="price__details-term">曜日</dt>
+              <dd class="price__details-desc">月曜日</dd>
+            </div>
+            <div class="price__details-item">
+              <dt class="price__details-term">時間</dt>
+              <dd class="price__details-desc">11:00~12:00</dd>
+            </div>
+            <div class="price__details-item">
+              <dt class="price__details-term">備考</dt>
+              <dd class="price__details-desc">人数次第で土曜クラス開講予定</dd>
+            </div>
+          </dl>
+          <ul class="price__notes">
+            <li class="price__note">※月謝制ではありません</li>
+            <li class="price__note">※単発参加OK</li>
+            <li class="price__note">※詳細はお問い合わせください。</li>
+          </ul>
         </div>
       </div>
     </section>

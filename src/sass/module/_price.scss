@@ -5,7 +5,7 @@
   margin-top: rem(80);
   padding-top: rem(60);
   padding-bottom: rem(60);
-  background-color: #fafafa;
+  background-color: #fefcf8;
   @include mq(md) {
     margin-top: rem(120);
     padding-top: rem(80);
@@ -15,6 +15,25 @@
 
 .price__inner {
   @include mq(md) {
+    max-width: rem(800);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.price__header {
+  text-align: center;
+  @include mq(md) {
+  }
+}
+
+.price__label {
+  font-size: rem(16);
+  font-weight: $normal;
+  color: $color-accent;
+  font-family: $second-font-family;
+  @include mq(md) {
+    font-size: rem(18);
   }
 }
 
@@ -23,14 +42,155 @@
   font-weight: $bold;
   text-align: center;
   color: $color-main;
-  margin-top: rem(40);
+  margin-top: rem(8);
   @include mq(md) {
     font-size: rem(36);
-    margin-top: rem(60);
+    margin-top: rem(12);
   }
 }
 
-.price__card {
+.price__table-wrapper {
+  margin-top: rem(40);
+  overflow-x: auto;
   @include mq(md) {
+    margin-top: rem(50);
   }
+}
+
+.price__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $white;
+  border-radius: rem(8);
+  overflow: hidden;
+  box-shadow: 0 rem(2) rem(8) rgba(0, 0, 0, 0.1);
+}
+
+.price__table-header {
+  background-color: #e8f0f5;
+  color: $black;
+  font-size: rem(14);
+  font-weight: $bold;
+  padding: rem(16) rem(12);
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+  @include mq(md) {
+    font-size: rem(16);
+    padding: rem(20) rem(16);
+  }
+}
+
+.price__table-data {
+  color: $black;
+  font-size: rem(14);
+  padding: rem(16) rem(12);
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  @include mq(md) {
+    font-size: rem(16);
+    padding: rem(20) rem(16);
+  }
+}
+
+.price__table tbody tr:last-child .price__table-data {
+  border-bottom: none;
+}
+
+.price__details {
+  margin-top: rem(40);
+  padding: rem(24);
+  background-color: $white;
+  border-radius: rem(12);
+  box-shadow: 0 rem(2) rem(8) rgba(0, 0, 0, 0.1);
+  @include mq(md) {
+    margin-top: rem(50);
+    padding: rem(32);
+  }
+}
+
+.price__details-title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $color-main;
+  padding-left: rem(16);
+  position: relative;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.price__details-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(8);
+  height: rem(8);
+  background-color: $black;
+}
+
+.price__details-list {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(28);
+  }
+}
+
+.price__details-item {
+  display: flex;
+  gap: rem(16);
+  padding: rem(12) 0;
+  border-bottom: 1px solid #f0f0f0;
+  @include mq(md) {
+    gap: rem(24);
+    padding: rem(16) 0;
+  }
+}
+
+.price__details-item:last-child {
+  border-bottom: none;
+}
+
+.price__details-term {
+  flex-shrink: 0;
+  width: rem(60);
+  font-size: rem(14);
+  font-weight: $bold;
+  color: $black;
+  @include mq(md) {
+    width: rem(80);
+    font-size: rem(16);
+  }
+}
+
+.price__details-desc {
+  flex: 1;
+  font-size: rem(14);
+  color: $black;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.price__notes {
+  list-style: none;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(28);
+  }
+}
+
+.price__note {
+  font-size: rem(13);
+  color: #666;
+  line-height: 1.8;
+  margin-top: rem(8);
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+.price__note:first-child {
+  margin-top: 0;
 }
