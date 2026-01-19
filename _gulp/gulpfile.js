@@ -192,10 +192,10 @@ const copyToRoot = () => {
 };
 // ファイルの監視
 const watchFiles = () => {
-  watch(srcPath.css, series(cssSass, browserSyncReload));
-  watch(srcPath.js, series(jsBabel, browserSyncReload));
-  watch(srcPath.img, series(imgImagemin, browserSyncReload));
-  watch(srcPath.html, series(htmlCopy, browserSyncReload));
+  watch(srcPath.css, series(cssSass, copyToRoot, browserSyncReload));
+  watch(srcPath.js, series(jsBabel, copyToRoot, browserSyncReload));
+  watch(srcPath.img, series(imgImagemin, copyToRoot, browserSyncReload));
+  watch(srcPath.html, series(htmlCopy, copyToRoot, browserSyncReload));
 };
 
 // ブラウザシンク付きの開発用タスク
