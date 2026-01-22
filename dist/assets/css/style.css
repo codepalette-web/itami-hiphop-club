@@ -604,6 +604,7 @@ input[type=checkbox].contact__form-checkbox:focus {
 }
 
 .contact__form-button {
+	-webkit-text-decoration: none;
 	background-color: orange;
 	border: none;
 	border-radius: 1.875rem;
@@ -617,6 +618,7 @@ input[type=checkbox].contact__form-checkbox:focus {
 	overflow: hidden;
 	padding: 1.125rem 3rem;
 	position: relative;
+	text-decoration: none;
 	transition: all 0.3s ease;
 	width: 100%;
 }
@@ -657,11 +659,6 @@ input[type=checkbox].contact__form-checkbox:focus {
 
 .contact__thanks-button-wrapper {
 	margin-top: 2rem;
-}
-
-.contact__form-button {
-	-webkit-text-decoration: none;
-	text-decoration: none;
 }
 
 .faq-item {

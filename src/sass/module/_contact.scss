@@ -409,6 +409,7 @@ input[type="checkbox"].contact__form-checkbox {
   border: none;
   border-radius: rem(30);
   cursor: pointer;
+  text-decoration: none;
   box-shadow: 0 rem(4) rem(12) rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   position: relative;
@@ -482,6 +483,3 @@ input[type="checkbox"].contact__form-checkbox {
   }
 }
 
-.contact__form-button {
-  text-decoration: none;
-}

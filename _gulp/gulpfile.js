@@ -203,3 +203,6 @@ exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy), parall
 
 // 本番用タスク
 exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy, copyToRoot);
+
+// 個別タスク
+exports.cssSass = cssSass;
