@@ -1067,11 +1067,10 @@ input[type=checkbox].contact__form-checkbox:focus {
 	padding-top: 1.25rem;
 }
 
-.header__logo {
+.header__inner {
 	align-items: center;
 	display: flex;
-	flex-direction: column;
-	text-align: center;
+	justify-content: space-between;
 }
 
 .header__logo-main {
@@ -1086,6 +1085,36 @@ input[type=checkbox].contact__form-checkbox:focus {
 	color: #111;
 	font-size: 0.75rem;
 	font-weight: 400;
+}
+
+.header__logo-link {
+	-webkit-text-decoration: none;
+	align-items: center;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+.header__button {
+	-webkit-text-decoration: none;
+	background-color: transparent;
+	border: 2px solid orange;
+	border-radius: 1.25rem;
+	color: orange;
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	padding: 0.625rem 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s;
+	white-space: nowrap;
+}
+
+.header__button:hover {
+	background-color: orange;
+	color: #fff;
 }
 
 .inner {
@@ -1988,13 +2017,6 @@ input[type=checkbox].contact__form-checkbox:checked::after {
 	padding-top: 1.5rem;
 }
 
-.header__logo {
-	align-items: baseline;
-	flex-direction: row;
-	gap: 0.75rem;
-	text-align: left;
-}
-
 .header__logo-main {
 	font-size: 2rem;
 	letter-spacing: 0.1875rem;
@@ -2002,6 +2024,18 @@ input[type=checkbox].contact__form-checkbox:checked::after {
 
 .header__logo-sub {
 	font-size: 0.875rem;
+}
+
+.header__logo-link {
+	align-items: baseline;
+	flex-direction: row;
+	gap: 0.75rem;
+}
+
+.header__button {
+	border-radius: 1.5625rem;
+	font-size: 1rem;
+	padding: 0.75rem 1.5rem;
 }
 
 .inner {
