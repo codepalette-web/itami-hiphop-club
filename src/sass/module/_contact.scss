@@ -417,3 +417,34 @@ input[type="checkbox"].contact__form-checkbox {
 .contact__form-button:hover {
   opacity: 0.8;
 }
+
+// お問い合わせ完了ページ
+.contact__thanks-content {
+  text-align: center;
+  padding: rem(40) 0;
+  @include mq(md) {
+    padding: rem(60) 0;
+  }
+}
+
+.contact__thanks-text {
+  font-size: rem(16);
+  line-height: 1.8;
+  color: $white;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(18);
+    margin-bottom: rem(48);
+  }
+}
+
+.contact__thanks-button-wrapper {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.contact__form-button {
+  text-decoration: none;
+}

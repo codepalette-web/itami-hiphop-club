@@ -618,6 +618,27 @@ input[type=checkbox].contact__form-checkbox:focus {
 	opacity: 0.8;
 }
 
+.contact__thanks-content {
+	padding: 2.5rem 0;
+	text-align: center;
+}
+
+.contact__thanks-text {
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1.8;
+	margin-bottom: 2.5rem;
+}
+
+.contact__thanks-button-wrapper {
+	margin-top: 2rem;
+}
+
+.contact__form-button {
+	-webkit-text-decoration: none;
+	text-decoration: none;
+}
+
 .faq-item {
 	background-color: #fff;
 	border-radius: 0.5rem;
@@ -1680,6 +1701,19 @@ input[type=checkbox].contact__form-checkbox:checked::after {
 	font-size: 1.125rem;
 	min-width: 15.625rem;
 	padding: 1.125rem 3.75rem;
+}
+
+.contact__thanks-content {
+	padding: 3.75rem 0;
+}
+
+.contact__thanks-text {
+	font-size: 1.125rem;
+	margin-bottom: 3rem;
+}
+
+.contact__thanks-button-wrapper {
+	margin-top: 2.5rem;
 }
 
 .faq-item {
