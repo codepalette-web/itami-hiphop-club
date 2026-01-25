@@ -186,6 +186,9 @@ const clean = () => {
 const copyToRoot = () => {
   return src([
     "../dist/index.html",
+    "../dist/thanks.html",
+    "../dist/robots.txt",
+    "../dist/sitemap.xml",
     "../dist/assets/**/*"
   ], { base: "../dist/" })
     .pipe(dest(rootPath.all));
