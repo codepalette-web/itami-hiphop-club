@@ -316,7 +316,6 @@ legend {
 }
 
 .author {
-	margin-top: 5rem;
 	padding-bottom: 2.5rem;
 	padding-top: 2.5rem;
 }
@@ -325,9 +324,17 @@ legend {
 	text-align: center;
 }
 
-.author__text {
+.author__text p {
+	align-items: center;
 	color: #111;
-	font-size: 0.75rem;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	gap: 0.25rem;
+	justify-content: center;
+	line-height: 1.25rem;
 }
 
 .author__link {
@@ -335,19 +342,21 @@ legend {
 	align-items: center;
 	color: inherit;
 	display: inline-flex;
-	gap: 0.375rem;
+	line-height: 0;
 	text-decoration: underline;
-	transition: opacity 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
 }
 
 .author__link:hover {
-	opacity: 0.7;
+	transform: scale(1.05);
 }
 
 .author__logo {
-	height: 1.25rem;
-	vertical-align: middle;
-	width: auto;
+	-o-object-fit: contain;
+	aspect-ratio: 119/20;
+	display: block;
+	object-fit: contain;
+	width: 7.4375rem;
 }
 
 .contact {
@@ -916,7 +925,6 @@ input[type=checkbox].contact__form-checkbox:focus {
 
 .footer {
 	background-color: #111;
-	margin-top: 5rem;
 	padding-bottom: 2.5rem;
 	padding-top: 2.5rem;
 }
@@ -1655,13 +1663,8 @@ html {
 }
 
 .author {
-	margin-top: 6.25rem;
 	padding-bottom: 3rem;
 	padding-top: 3rem;
-}
-
-.author__text {
-	font-size: 0.875rem;
 }
 
 .contact {

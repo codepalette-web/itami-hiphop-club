@@ -182,16 +182,24 @@ const clean = () => {
   return del(destPath.all, { force: true });
 };
 
+// robots.txt / sitemap.xml をルートから dist へコピー
+const copyStaticToDist = () => {
+  return src(["../robots.txt", "../sitemap.xml"], { allowEmpty: true })
+    .pipe(dest("../dist/"));
+};
+
 // distの内容をルートにコピー（GitHub Pages用）
 const copyToRoot = () => {
-  return src([
-    "../dist/index.html",
-    "../dist/thanks.html",
-    "../dist/robots.txt",
-    "../dist/sitemap.xml",
-    "../dist/assets/**/*"
-  ], { base: "../dist/" })
-    .pipe(dest(rootPath.all));
+  return src(
+    [
+      "../dist/index.html",
+      "../dist/thanks.html",
+      "../dist/robots.txt",
+      "../dist/sitemap.xml",
+      "../dist/assets/**/*",
+    ],
+    { base: "../dist/", allowEmpty: true }
+  ).pipe(dest(rootPath.all));
 };
 // ファイルの監視
 const watchFiles = () => {
@@ -202,10 +210,22 @@ const watchFiles = () => {
 };
 
 // ブラウザシンク付きの開発用タスク
-exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy), parallel(watchFiles, browserSyncFunc));
+exports.default = series(
+  series(cssSass, jsBabel, imgImagemin, htmlCopy, copyStaticToDist),
+  parallel(watchFiles, browserSyncFunc)
+);
 
 // 本番用タスク
-exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy, copyToRoot);
+exports.build = series(
+  clean,
+  cssSass,
+  jsBabel,
+  imgImagemin,
+  htmlCopy,
+  copyStaticToDist,
+  copyToRoot
+);
 
 // 個別タスク
 exports.cssSass = cssSass;
+exports.copyStaticToDist = copyStaticToDist;
