@@ -315,6 +315,50 @@ legend {
 	width: 100%;
 }
 
+.author {
+	padding-bottom: 2.5rem;
+	padding-top: 2.5rem;
+}
+
+.author__inner {
+	text-align: center;
+}
+
+.author__text p {
+	align-items: center;
+	color: #111;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	gap: 0.25rem;
+	justify-content: center;
+	line-height: 1.25rem;
+}
+
+.author__link {
+	-webkit-text-decoration: underline;
+	align-items: center;
+	color: inherit;
+	display: inline-flex;
+	line-height: 0;
+	text-decoration: underline;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.author__link:hover {
+	transform: scale(1.05);
+}
+
+.author__logo {
+	-o-object-fit: contain;
+	aspect-ratio: 119/20;
+	display: block;
+	object-fit: contain;
+	width: 7.4375rem;
+}
+
 .contact {
 	background-color: green;
 	padding-bottom: 3.75rem;
@@ -881,7 +925,6 @@ input[type=checkbox].contact__form-checkbox:focus {
 
 .footer {
 	background-color: #111;
-	margin-top: 5rem;
 	padding-bottom: 2.5rem;
 	padding-top: 2.5rem;
 }
@@ -1617,6 +1660,11 @@ html {
 
 .access__map iframe {
 	height: 28.125rem;
+}
+
+.author {
+	padding-bottom: 3rem;
+	padding-top: 3rem;
 }
 
 .contact {

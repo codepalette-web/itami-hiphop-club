@@ -1,0 +1,54 @@
+@use "global" as *;
+
+// 制作者情報
+.author {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(48);
+    padding-bottom: rem(48);
+  }
+}
+
+.author__inner {
+  text-align: center;
+}
+
+.author__text {
+
+}
+
+.author__text p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: rem(4);
+  font-family: $base-font-family;
+  font-size: rem(14);
+  color: $black;
+  font-weight: $normal;
+  line-height: rem(20);
+}
+
+.author__link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  color: inherit;
+  text-decoration: underline;
+  transition: opacity 0.3s, transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.author__logo {
+  display: block;
+  width: rem(119);
+  aspect-ratio: 119 / 20;
+  object-fit: contain;
+}
+
+
