@@ -79,6 +79,13 @@
   }
 }
 
+.access__text-note {
+  font-size: rem(16);
+  font-weight: $bold;
+  text-align: center;
+  color: $black;
+  margin-top: rem(8);
+}
 .access__note {
   font-size: rem(13);
   text-align: center;
