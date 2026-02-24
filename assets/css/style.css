@@ -1003,6 +1003,13 @@ input[type=checkbox].contact__form-checkbox:focus {
 	margin-top: 1.5rem;
 }
 
+.fv__sub-title {
+	color: orange;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.6;
+}
+
 .fv__text {
 	color: #111;
 	font-size: 1.125rem;
